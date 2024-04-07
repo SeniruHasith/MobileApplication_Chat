@@ -1,4 +1,4 @@
-import 'package:demoappliaction/Views/register_page.dart';
+import 'package:demoappliaction/Views/RegistrationScreen/register_page.dart';
 import 'package:demoappliaction/widgets/data_input_forms/common_text_form_field/common_text_form_field.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -21,7 +21,10 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Login Page"),
+        elevation: 0,
+        foregroundColor: Colors.white.withOpacity(0),
+        backgroundColor: Colors.white.withOpacity(0),
+        title: const Text("Login Page",style: TextStyle(color: Colors.black),),
         centerTitle: true,
       ),
       body: SingleChildScrollView(
